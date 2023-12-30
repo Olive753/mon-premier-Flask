@@ -5,7 +5,6 @@ from flask_login import LoginManager, UserMixin, login_user, logout_user, login_
 from flask_mail import Mail, Message
 from werkzeug.security import check_password_hash
 import mysql.connector
-# from . import app, db
 import os
 
 # Initialize Flask app
