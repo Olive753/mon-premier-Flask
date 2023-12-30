@@ -11,13 +11,13 @@ import os
 app = Flask(__name__)
 
 # Configure app
-app.config['SECRET_KEY'] = '38904621054367'
-DATABASE_URL="mysql+mysqlconnector://Olive357:Olive0880@Olive357.mysql.pythonanywhere-services.com/Olive357?host=%"
+app.config['SECRET_KEY'] = '#######'
+DATABASE_URL="mysql+mysqlconnector://#####:#####@####.mysql.pythonanywhere-services.com/#####?host=%"
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'odomenget@gmail.com'
-app.config['MAIL_PASSWORD'] = 'qdhj sguf dkec lxfa'
+app.config['MAIL_USERNAME'] = 'mail'
+app.config['MAIL_PASSWORD'] = 'password'
 app.config['DEBUG'] = True
 
 # Initialize SQLAlchemy, LoginManager, and Mail
