@@ -52,13 +52,7 @@ class UserSchema(db.Model):
     role = db.Column(db.String(255))
     registration_date = db.Column(db.Date)
     validation_date = db.Column(db.DateTime)
-#    __tablename__ = 'users'  # Add this line
 
-'''
-class UserSchema(db.Schema):
-    class Meta:
-        fields = ('id', 'username', 'email', 'role', 'registration_date', 'validation_date')
-'''
 # Initialize User schema
 user_schema = UserSchema()
 users_schema = UserSchema()
