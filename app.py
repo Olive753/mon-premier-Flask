@@ -84,7 +84,7 @@ def process_contact_form():
     email = request.form['email']
     message = request.form['message']
 
-    send_email('Nouveau message de contact', 'domenget@gmail.com', ['odomenget@gmail.com'], f'Nom: {name}\nAdresse e-mail: {email}\nMessage: {message}', f'<p><strong>Nom:</strong> {name}</p><p><strong>Adresse e-mail:</strong> {email}</p><p><strong>Message:</strong></p><p>{message}</p>')
+    send_email('Nouveau message de contact', 'mail', ['mail'], f'Nom: {name}\nAdresse e-mail: {email}\nMessage: {message}', f'<p><strong>Nom:</strong> {name}</p><p><strong>Adresse e-mail:</strong> {email}</p><p><strong>Message:</strong></p><p>{message}</p>')
     flash(('success', 'Votre message a été envoyé avec succès!'))
     return redirect(url_for('contact'))
 
